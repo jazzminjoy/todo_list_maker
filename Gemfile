@@ -32,6 +32,16 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Add rspec to development and test environments
+group :development, :test do
+	gem 'rspec-rails', '~> 2.0'
+end
+ 
+# Add capybara to test version only
+group :test do
+	gem 'capybara', '~>2.1.0'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
