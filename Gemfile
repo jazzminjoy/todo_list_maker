@@ -38,8 +38,10 @@ group :development, :test do
 end
  
 # Add capybara to test version only
+# Add gem shoulda-matches for writing tests 
 group :test do
-	gem 'capybara', '~>2.1.0'
+	gem 'capybara', '~> 2.1.0'
+	gem 'shoulda-matchers', '~> 2.6.1'
 end
 
 # Use ActiveModel has_secure_password
